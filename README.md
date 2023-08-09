@@ -48,3 +48,7 @@ while not done:
   env.render()
 
 ```
+
+## Training
+
+I used [Soft Actor-Critic](https://arxiv.org/abs/1801.01290)https://arxiv.org/abs/1801.01290) 
