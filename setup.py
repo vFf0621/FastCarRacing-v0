@@ -15,7 +15,8 @@ setup(
     packages=['gym_fast_car_racing'],
     install_requires=[
         'gymnasium[Box2d]',
-	'torchvision'
+	'torchvision',
+	    'torch'
     ]
 )
 
