@@ -1,5 +1,12 @@
 # FastCarRacing-v0 Gym Environment
 [![Click to play](https://img.youtube.com/vi/ByztGknW5XE/0.jpg)](https://www.youtube.com/watch?v=ByztGknW5XE)
+
+## Introduction
+
+The original CarRacing-v2 environment in Gymnasium requires a long time to train due to the way its reward model is defined, especially for off policy continuous agents such as Soft-Actor Critic or TD3. The episode only terminates when the car is far from the track, which causes the car to spin around on the grass/not moving at all when the agent is exploring. Thus not very time efficient. Thus, I propose a modified environment fixing these problems, enabling faster and easier training/better performance for SAC/DDPG agents. 
+
+
+
 ## Features
 
 -Immediate termination and a penalty of -100 reward when the nose of the car is off the road.
@@ -9,6 +16,8 @@
 -Braking is only available when speed exceeds 70, maximizing the speed.
 
 -Throttle is incentivized more than brake.
+
+-State has been changed to a 96 x 96 tensor representing the grayscale image of the car's surrounding.
 
 ## Installation
 
