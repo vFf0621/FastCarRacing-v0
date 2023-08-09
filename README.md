@@ -51,7 +51,7 @@ while not done:
 
 ## Training
 
-[Soft Actor-Critic](https://arxiv.org/abs/1801.01290) is being used to train the stochastic policy and the policy is evaluated deterministically(the mean of the distribution is used for the evaluation). Below is the code for the actor CNN policy:
+[Soft Actor-Critic](https://arxiv.org/abs/1801.01290) is being used to train the stochastic policy and the policy is evaluated deterministically(the mean, mu of the distribution is used for the evaluation). Below is the code for the actor CNN policy:
 
 ```python
         self.conv1 = nn.Conv2d(in_channels=1, out_channels=32, kernel_size=8, stride=4)
@@ -65,3 +65,4 @@ while not done:
         self.tanh = nn.Tanh() # Applied the the output action.
 
 ```
+
