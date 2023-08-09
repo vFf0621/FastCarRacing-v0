@@ -10,7 +10,7 @@ from gymnasium import spaces
 from .car_dynamics_4wd import Car
 from gymnasium.error import DependencyNotInstalled, InvalidAction
 from gymnasium.utils import EzPickle
-
+import torch
 
 try:
     import Box2D
@@ -566,6 +566,7 @@ class FastCarRacing(gym.Env, EzPickle):
         self.world.Step(1.0 / FPS, 6 * 30, 2 * 30)
         self.t += 1.0 / FPS
         self.state, self.on_track= self._render("state_pixels")
+      
         self.on_track = all(self.on_track)
         terminated = False
         truncated = False
@@ -657,7 +658,7 @@ class FastCarRacing(gym.Env, EzPickle):
             return self._create_image_array(self.surf, (VIDEO_W, VIDEO_H))
         elif mode == "state_pixels":
             x=self._create_image_array(self.surf, (STATE_W, STATE_H))
-            return self.gs(x), x[0][65][48]==self.road_color - 2
+            return self.gs(torch.from_numpy(x.transpose(2, 0, 1))), x[65][48]==self.road_color - 2
         else:
             return self.isopen
 
@@ -790,7 +791,7 @@ class FastCarRacing(gym.Env, EzPickle):
     def _create_image_array(self, screen, size):
         scaled_screen = pygame.transform.smoothscale(screen, size)
         return np.transpose(
-            np.array(pygame.surfarray.pixels3d(scaled_screen)), axes=(2, 1, 0)
+            np.array(pygame.surfarray.pixels3d(scaled_screen)), axes=(1, 0, 2)
         )
 
     def close(self):
