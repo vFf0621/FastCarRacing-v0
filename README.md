@@ -5,7 +5,7 @@
 
 ## Introduction
 
-The original CarRacing-v2 environment in Gymnasium requires a long time to train due to the way its reward model is defined, especially for off policy continuous agents such as Soft-Actor Critic or TD3. The episode only terminates when the car is far from the track, which causes the car to spin around on the grass/not moving at all when the agent is exploring. Thus not very time efficient. Thus, I propose a modified environment fixing these problems, enabling faster and easier training/better performance for SAC/DDPG agents. 
+The original CarRacing-v2 environment in Gymnasium requires a long time to train due to the way its reward model is defined, especially for off policy continuous agents such as Soft Actor-Critic or TD3. The episode only terminates when the car is far from the track, which causes the car to spin around on the grass/not moving at all when the agent is exploring. Thus not very time efficient. Thus, I propose a modified environment fixing these problems, enabling faster and easier training/better performance for SAC/DDPG agents. 
 
 
 
