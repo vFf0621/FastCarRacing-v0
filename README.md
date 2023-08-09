@@ -51,4 +51,4 @@ while not done:
 
 ## Training
 
-I used ![Soft Actor-Critic](https://arxiv.org/abs/1801.01290)
+I used [Soft Actor-Critic](https://arxiv.org/abs/1801.01290)
