@@ -17,7 +17,7 @@ The original CarRacing-v2 environment in Gymnasium requires a long time to train
 
 -Throttle is incentivized more than brake.
 
--State has been changed to a 96 x 96 tensor representing the grayscale image of the car's surrounding.
+-State has been changed to a 96 x 96 Torch Tensor representing the grayscale image of the car's surrounding.
 
 ## Installation
 
