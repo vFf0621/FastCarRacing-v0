@@ -62,7 +62,6 @@ while not done:
         self.relu = nn.ReLU() # For each layer except the last.
         self.mu = nn.Linear(1024, env.action_space.shape[0])
         self.sigma = nn.Linear(1024, env.action_space.shape[0])
-        self.device = device
         self.tanh = nn.Tanh() # Applied the the output action.
 
 ```
