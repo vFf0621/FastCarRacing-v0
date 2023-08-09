@@ -64,7 +64,7 @@ while not done:
         self.tanh = nn.Tanh() # Applied the the output action.
 
 ```
-
+For the two critic functions and the value function, the hidden layer size is the same(1024) and they all have 3 hidden layers.
 
 
 ## Evaluation
