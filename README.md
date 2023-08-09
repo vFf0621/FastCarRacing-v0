@@ -1,6 +1,5 @@
 # FastCarRacing-v0 Gym Environment
-[![Video](https://img.youtube.com/watch?v=ByztGknW5XE/default.jpg)](https://www.youtube.com/watch?v=ByztGknW5XE)
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ByztGknW5XE/0.jpg)](https://www.youtube.com/watch?v=ByztGknW5XE)
 ## Features
 
 -Immediate termination and a penalty of -100 reward for going off the road.
