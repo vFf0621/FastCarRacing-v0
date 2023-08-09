@@ -1,5 +1,13 @@
-# Fast Car Racing Gym Environment
-[![Video](https://img.https:youtube.com/watch?v=ByztGknW5XE/default.jpg)](https://www.youtube.com/watch?v=ByztGknW5XE)
+# FastCarRacing-v0 Gym Environment
+[![Video](https://img.youtube.com/watch?v=ByztGknW5XE/default.jpg)](https://www.youtube.com/watch?v=ByztGknW5XE)
+
+## Features
+
+-Immediate termination and a penalty of -100 reward for going off the road.
+
+-Action space has been changed to 2 dimensional so that the throttle and brake are mutually exclusive.
+
+-
 
 ## Installation
 
