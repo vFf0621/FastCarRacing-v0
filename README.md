@@ -70,4 +70,5 @@ while not done:
 
 ## Evaluation
 
+[Here](https://drive.google.com/file/d/1WlVLNuqCGoEFpw5hY7FWaRuPv3_PmZ0h/view?usp=drive_link) is the actor policy being trained for 13 hours. Remember, this is evaluated on the mu final layer and Tanh activation needs to be applied. This policy gives a reasonable performance, can reach a maximum score of 1200 but is not perfect.
 
