@@ -35,7 +35,7 @@ pip install -e .
 import gymnasium
 import gym_fast_car_racing
 
-env = gym.make("FastCarRacing-v0")
+env = gym.make("FastCarRacing-v0",render_mode="human")
 
 obs = env.reset()[0]
 done = False
@@ -45,7 +45,6 @@ while not done:
   action = agent.policy(obs)
   obs_, reward, done, truncated, info = env.step(action)
   total_reward += reward
-  env.render()
 
 ```
 
