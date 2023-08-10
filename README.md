@@ -1,7 +1,7 @@
 # FastCarRacing-v0 Gym Environment
 
 ## Click to play: 
-[![Click to play](https://img.youtube.com/vi/ByztGknW5XE/0.jpg)](https://www.youtube.com/watch?v=ByztGknW5XE)
+[![Click to play](https://img.youtube.com/vi/mvJ_Ys-qOus/0.jpg)](https://www.youtube.com/watch?v=mvJ_Ys-qOus)
 
 ## Introduction
 
