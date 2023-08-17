@@ -7,8 +7,6 @@ Created on Wed Aug  9 12:36:38 2023
 from gymnasium.envs.registration import register
 from gym_fast_car_racing.FastCarRacing import FastCarRacing
 
-print("test")
-
 register(
     id='FastCarRacing-v0',
     entry_point='gym_fast_car_racing:FastCarRacing',
